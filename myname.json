@@ -1,4 +1,6 @@
 [
+    {},
+    {},
     {
         "name": "Sachin Tendulkar",
         "records": "100 international centuries"
@@ -12,7 +14,7 @@
         "records": "Most T20I wins as captain for India"
     },
     {
-        "name": "RickyPonting",
+        "name": "Ricky Ponting",
         "records": "Most ICC trophies as captain"
     },
     {
@@ -44,7 +46,7 @@
         "records": "Most wickets in World Cup history"
     },
     {
-        "name": "Kumar Sangakkara",
+        "name": "KumarSangakkara",
         "records": "Most consecutive ODI centuries (4)"
     },
     {
@@ -56,19 +58,19 @@
         "records": "Most catches by a non-wicketkeeper in Tests"
     },
     {
-        "name": "AnilKumble",
+        "name": "anilkumble",
         "records": "10 wickets in a Test innings"
     },
     {
-        "name": "WasimAkram",
+        "name": "Wasim Akram",
         "records": "Most wickets in ODI history for a fast bowler"
     },
     {
-        "name": "ShoaibAkhtar",
+        "name": "Shoaib Akhtar",
         "records": "Fastest delivery in cricket history (161.3 km/h)"
     },
     {
-        "name": "Ben Stokes",
+        "name": "benstokes",
         "records": "Highest individual score in an ODI final (84*)"
     },
     {
@@ -76,53 +78,20 @@
         "records": "Fastest to 3,000 runs in T20Is for England"
     },
     {
-        "name": "mann krishna",
-        "records": "795 wickets"
+        "name": "Jasprit Bumrah",
+        "records": "Most economical spell in T20 World Cup history"
     },
     {
-        "name": "mann krishna",
-        "records": "795 wickets"
+        "name": "suramshivakrishna",
+        "records": "best bowler"
     },
     {
-        "name": "mann krishna",
-        "records": "795 wickets"
+        "name": "this is anil kumble",
+        "records": "best bowler"
     },
     {
-        "name": "ramesh",
-        "records": "best player in the world "
-    },
-    {
-        "name": "virendra",
-        "records": "quick player ever in the world  "
-    },
-    {
-        "name": "virendra",
-        "records": "quick player ever in the world  "
-    },
-    {
-        "name": "ramesh",
-        "records": "army man   "
-    },
-    {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "age": 30
-    },
-    {
-        "name": "shiva",
-        "records": "best bowler that"
-    },
-    {
-        "name": "shiva",
-        "records": "best bowler that"
-    },
-    {
-        "name": "shiva",
-        "records": "best bowler that"
-    },
-    {
-        "name": "naveen kumar",
-        "records": "sleeper"
+        "id": 25,
+        "name": "virat kohli",
+        "records": "best batsman"
     }
 ]

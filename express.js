@@ -121,6 +121,8 @@ app.get("/gettingdata",async (req,res)=>{
 
 
     let {name,records} =req.body
+    
+    console.log(req.body,"sdrfgvhbjnkmnjhbgvfcdrsxdxghb hvgcfdxsbn bvcfxc bcvfv bcvfd")
     let cricketersdata =await fs.readFile("./dummys.json","utf8")
     console.log("my data")
     console.log(cricketersdata)
@@ -143,8 +145,48 @@ app.get("/gettingdata",async (req,res)=>{
     res.send({"mydata":parsed_data})
     // res.send({"myupdated data is in the currect for " :parsed_data})
 })
+// app.put("/getbyname/:name",async (req,res)=>{
+//     let reqname =req.params.name.toLowerCase()
+//     console.log(reqname,"reqname")
+//     let namebyuser =JSON.parse(await fs.readFile("./dummys.json","utf8"))
+//     console.log(namebyuser,"name by user")
+
+//     let searchedData =namebyuser.filter((x,y)=>{
+//         return x.name.toLowerCase() ==reqname
+//     })
+
+//     console.log("this is my searched data")
+//     console.log(searchedData)
+//     res.send({"bowler data":searchedData})
+// })
 
 
+app.put("/getbyname/:name",async (req,res)=>{
+    let {name,records} =req.body
+    let reqname =req.params.name .toLowerCase()
+    let namebyuser =JSON.parse(await fs.readFile("./dummys.json","utf8"))
+    console.log(namebyuser,"name by user")
+    let requiredData =namebyuser.filter((x,y)=>{
+        return x.name.toLowerCase() ==reqname
+    })
+    console.log(requiredData,"this is my required data for development in the team of sperit")
+
+    let remaining_data =namebyuser.filter((c,y)=>{
+        return c.name.toLowerCase() !== reqname
+    })
+
+    if(requiredData.length<=0){
+        res.json({ "message": "data not found here" })
+    }
+    else{
+        requiredData[0].name= name
+        requiredData[0].records =records
+        remaining_data.push(requiredData[0])
+        res.json({"remaining":remaining_data})
+        await fs.writeFile("./dummys.json", JSON.stringify(remaining_data));
+        res.json({ message: "My data is written over the original file in a sense of humor", data: remaining_data });
+    }
+})
 
 
 
